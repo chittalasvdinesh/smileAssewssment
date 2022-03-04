@@ -1,0 +1,780 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(./fontFamily/OpenSans-Regular.ttf);
+}
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: OpenSans;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+.hamburger-menu {
+    padding-right: 20px;
+    display: none;
+}
+
+.navlinks .nav-link+.nav-link{
+    margin-left: 20px;
+}
+
+.header {
+    background: url("./images/banner2.png") no-repeat;
+    background-size: cover;
+}
+.logo-image {
+    width: 20%;
+}
+.nav-link, .need-help-button{
+    font-size: 17px;
+}
+
+.nav-link,.banner-title,.banner-description{
+    color: #FFFFFF;
+
+}
+
+.need-help-button {
+    background: #F99325;
+    color: #000000;
+    border: #707070 1px solid;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+   
+}
+
+.banner-section,.banner-container,.about-smile-section,.ourValues-section,.ourValues-section-container-1{
+    display: flex;
+}
+.banner-section {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 30px 0px 14%;
+}
+
+.banner-title{
+    font-size: 30px;
+    max-width: 170px;
+    padding-top: 100px;
+}
+
+.banner-title-part-1,.banner-title-part-2  {
+    font-size: 45px;
+}
+
+.banner-title-part-2 {
+    color: #F99325;
+}
+
+.banner-image {
+    width: 400px;
+    height: 600px;
+    opacity: 70%;
+}
+
+.banner-description {
+    font-size: 15px;
+    max-width: 170px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.banner-container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-smile-section{
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 100px 50px;
+}
+
+.smile-images {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+}
+
+.about-smile-section::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    bottom: 60%;
+    width: 100%;
+    opacity: 40%;
+}
+
+.about-smile-section-container-1 {
+    max-width: 600px;
+    position: relative;
+    padding-right: 70px;
+}
+
+.about-smile-section-container-2 {
+    max-width: 520px;
+}
+
+.about-smile-section-container-1> img:not(:first-child){
+    position: absolute;
+    content: "";
+}
+
+.sub-smile-images-1 {
+    width: 25%;
+    top: 50%;
+    left: -35%;
+}
+
+.sub-smile-images-2 {
+    width: 15%;
+    top: 65%;
+    left: -8%;
+}
+
+.sub-smile-images-3 {
+    width: 17%;
+    top: 70%;
+    right: 15%;
+}
+
+.sub-smile-images-4 {
+    width: 30%;
+    bottom: -15%;
+    left: -15%;
+}
+
+.sub-smile-images-5 {
+    width: 12%;
+    top: 85%;
+    left: 35%;
+}
+
+.sub-smile-images-6 {
+    width: 17%;
+    top: 100%;
+    left: -35%;
+}
+
+.sub-smile-images-7 {
+    width: 12%;
+    bottom: -28%;
+    left: -20%;
+}
+
+.sub-smile-images-8 {
+    width: 12%;
+    bottom: -20%;
+    left: 20%;
+}
+
+.sub-smile-images-9 {
+    width: 25%;
+    bottom: -25%;
+    left: 45%;
+}
+
+.sub-smile-images-10 {
+    width: 20%;
+    bottom: -20%;
+    right: -10%;
+}
+
+.sub-smile-images-11 {
+    width: 12%;
+    bottom: -25%;
+    right: -23%;
+}
+
+.bubble-title {
+    font-size: 25px;
+}
+
+.bubble-description {
+    font-size: 17px;
+}
+
+.ourValues-section {
+    justify-content: center;
+    background-image: url("./images/Mask\ Group\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ourValues-section-container-1 {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: rgb(0, 0, 0, 0.57);
+    max-width: 350px;
+}
+
+.ourValues-title{
+    margin-top: 10px;
+    max-width: 50px;
+    color: #ffff;
+}
+
+.ourValues-description {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #ffff;
+}
+
+.ourValues-section-container-2 {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card-container-1, .card-container-2{
+    padding: 20px;
+}
+.card-container-1 {
+    background-color: #E68219;
+}
+
+.card-container-2 {
+    background-color: #F2F2F2;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+.card-description {
+    font-size: 17px;
+}
+
+.programs-section,.programs-section-container-1,.footer-section {
+    display: flex;
+    justify-content: center;
+
+}
+.programs-section {
+    background-color: #F99325;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.programs-section-container-1 {
+    flex-direction: column;
+    border: #E68221 solid 10px;
+    margin: 70px;
+    padding: 40px;
+    max-width: 320px;
+}
+
+.tree-image {
+    
+    width: 300px;
+    height: 500px;
+}
+
+.program-title-1 {
+    font-size: 30px;
+
+}
+
+.program-description {
+    font-size: 16px;
+}
+
+.programs-section-container-2 {
+    position: relative;
+}
+
+.program-title-2 {
+    font-size: 35px;
+}
+
+.image-set {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.programs-section-container-2 > figure{
+    position: absolute;
+    content: "";
+}
+.image-position-set-1 {
+    top: 16%;
+    left: 0;
+}
+
+.image-position-set-2 {
+    top: 20%;
+    left: 35%;
+}
+
+.image-position-set-3 {
+    top: 25%;
+    right: 0;
+    text-align: center;
+}
+
+.image-position-set-4 {
+    top: 35%;
+    left: 0%;
+}
+
+.image-position-set-5 {
+    top: 37%;
+    left: 32%;
+}
+
+.image-position-set-6 {
+   
+    top: 55%;
+    left: 15%;
+}
+
+.image-position-set-7 {
+    top: 53%;
+    left: 60%;
+}
+
+.img-cap {
+    font-size: 18px;
+    max-width: 100px;
+}
+
+.partners-section{
+    background-color: #212121;
+    padding: 2%;
+}
+.partner-title{
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.partners-section-container{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-button{
+    background-color: transparent;
+    border: none;
+    
+}
+.left-arrow, .right-arrow{
+    color: #ffffff;
+    font-size: 40px;
+}
+.partner-image{
+    width: 80px;
+    height: 50px;
+}
+
+.footer-container {
+    background: url("./images/peopleHands.png") no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.footer-section{
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-container::before {
+    background-color: rgb(0, 0, 0, 0.64);
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.footer-section-1 {
+    max-width: 450px;
+}
+
+.footer-section-2 {
+    max-width: 350px;
+}
+
+.footer-title {
+    font-size: 40px;
+    color: #ffff;
+    z-index: 3;
+}
+
+.footer-title-part {
+    color: #F58F24;
+}
+
+.footer-description {
+    color: #FFFFFF;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.support-button {
+    color: #000;
+    background-color: #F99325;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hr-line {
+    margin: 10px;
+    color: #FFFFFF;
+    width: 90%;
+}
+
+.copyrights-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.download-button {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: #FFFFFF 1px solid;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.copyrights-description {
+    color: #FFFFFF;
+    font-size: 15px;
+    z-index: 5;
+}
+
+
+/* media queries */
+
+
+@media screen and (max-width:1200px) {
+    .nav-link,.need-help-button {
+        font-size: 15px;
+    }
+    .need-help-button {
+        border-radius: 8px;
+    }
+  
+    .banner-image {
+        width: 350px;
+        height: 400px;
+        opacity: 70%;
+        margin: 10px;
+    }
+    .smile-images{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-smile-section-container-1{
+        padding: 10px;
+    }
+    .about-smile-section{
+        max-width: 100%;
+        padding-right: 30px;
+    }
+    .sub-smile-images-3 {
+        width: 15%;
+        top: 80%;
+        right: 10%;
+    }
+    .ourValues-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .ourValues-section-container-1 {
+        background: url("./images/Mask\ Group\ 1.png");
+        background-size: cover;
+        max-width: 100%;
+        padding: 5%;
+        position: relative;
+        z-index: 1;
+    }
+    .ourValues-section-container-1::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.57);
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+    }
+    .ourValues-section-container-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card-container-1, .card-container-2{
+        background-color: #E68219;
+        padding: 15px;
+    }
+    .card-container-2{
+        background-color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width:899px) {
+    .need-help-button{
+        font-size: 10px;
+    }
+    .banner-image{
+        display: none;
+    }
+    .about-smile-section-container-2{
+        padding-top: 20%;
+        max-width: 100%;
+    }
+   
+    .sub-smile-images-1 {
+        width: 20%;
+        top: 50%;
+    }
+    
+    .sub-smile-images-2 {
+        width: 13%;
+        top: 69%;
+    }
+    
+    .sub-smile-images-3 {
+        width: 15%;
+        top: 80%;
+    }
+    
+    .sub-smile-images-4 {
+        width: 25%;
+        bottom: -20%;
+    }
+    
+    .sub-smile-images-5 {
+        width: 10%;
+        top: 100%;
+    }
+    
+    .sub-smile-images-6 {
+        width: 18%;
+        top: 100%;
+    }
+    
+    .sub-smile-images-7 {
+        width: 10%;
+        bottom: -30%;
+        left: -19%;
+    }
+    
+    .sub-smile-images-8 {
+        width: 12%;
+        bottom: -25%;
+    }
+    
+    .sub-smile-images-9 {
+        width: 20%;
+        bottom: -30%;
+        left: 50%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    
+    .nav-bar{
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+    }
+    .navlinks{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        padding: 10px;
+        
+    }
+    .navlinks a{
+        margin: 10px;
+        text-align: center;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .banner-head {
+        font-size: 20px;
+        max-width: 100px;
+        padding-top: 50px;
+    }
+    .banner-title-part-1, .banner-title-part-2{
+        font-size: 30px;
+    }
+    
+    .about-smile-section{
+        padding: 70px 35px;
+    }
+    
+    .smile-images {
+        width: 100%;
+    }
+    .about-smile-section-container-1 {
+        max-width: 70%;
+        padding-right: 70px;
+    }
+    .about-smile-section-container-2{
+        max-width: 100%;
+        padding-top: 20%;
+    }
+  
+    .ourValues-section-container-2{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .card-title{
+        font-size: 20px;
+    }
+    
+    .card-description {
+        font-size: 14px;
+    }
+    
+    .programs-section-container-1 {
+        margin: 70px;
+        padding: 40px;
+        max-width: 320px;
+    }
+    .program-title-2 {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .logo-image{
+        width: 30%;
+    }
+    
+    .banner-head{
+        max-width: 100%;
+    }
+
+    .smile-images{
+        width: 100px;
+        height: 100px;
+        padding-left: 20%;
+    }
+
+    .tree-image{
+        width: 200px;
+        height: 450px;
+    }
+    .ourValues-section-container-2{
+        grid-template-columns: 1fr;
+    }
+    .img-cap{
+        font-size: 11px;
+        max-width: 100px;
+
+    }
+    .image-set {
+        padding: 10px;
+        border-radius: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .image-position-set-1 {
+        top: 18%;
+    }
+    
+    .image-position-set-2 {
+        top: 27%;
+        left: 35%;
+    }
+    
+    .image-position-set-3 {
+        top: 35%;
+        right: -15%;
+        text-align: center;
+    }
+    
+    .image-position-set-4 {
+        top: 40%;
+        left: -10%;
+    }
+    
+    .image-position-set-5 {
+        top: 45%;
+    }
+    
+    .image-position-set-6 {
+        top: 55%;
+    }
+    
+    .image-position-set-7 {
+        top: 53%;
+    }
+    .sub-smile-images-3{
+        width: 14%;
+        top: 60%;
+    }
+    .sub-smile-images-4{
+        width: 30%;
+        top: 95%;
+        left: -10%;
+    }
+    .sub-smile-images-7{
+        width: 10%;
+        bottom: -40%;
+    }
+    .programs-section-container-1 {
+        flex-direction: column;
+        justify-content: center;
+        border: #E68221 solid 10px;
+        margin: 70px;
+        padding: 40px;
+    }
+    .ourValues-title {
+        font-size: 19px;
+    }
+    .ourValues-description {
+        font-size: 13px;
+    }
+}
