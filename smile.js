@@ -8,7 +8,7 @@ hamburgerMenu.addEventListener('click', function(){
 })
   
 const arr=[
-    "/Images/ntslImg.png",
+    "./Images/ntslImg.png",
     "./Images/Ruby.png",
     "./Images/ntslImg.png",
     "./Images/Ruby.png",
